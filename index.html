@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizarra Infinita</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h1>🧠 Pizarra Infinita</h1>
+      <section>
+        <h2>Proyectos</h2>
+        <div class="row">
+          <input id="boardName" type="text" placeholder="Nombre del proyecto" />
+          <button id="addBoard">+</button>
+        </div>
+        <ul id="boardList"></ul>
+      </section>
+
+      <section>
+        <h2>Elementos</h2>
+        <div class="tools">
+          <button data-tool="note">Nota</button>
+          <button data-tool="image">Imagen</button>
+          <button data-tool="video">Video</button>
+          <button data-tool="timeline">Línea de tiempo</button>
+          <button id="connectMode">Conectar</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Controles</h2>
+        <p>• Arrastra para mover elementos.</p>
+        <p>• Rueda del mouse para zoom.</p>
+        <p>• Shift + arrastrar fondo para navegar.</p>
+      </section>
+    </aside>
+
+    <main id="workspace">
+      <svg id="connections"></svg>
+      <div id="canvas"></div>
+    </main>
+
+    <template id="nodeTemplate">
+      <article class="node" draggable="false">
+        <header>
+          <span class="title"></span>
+          <button class="delete">✕</button>
+        </header>
+        <div class="content"></div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
