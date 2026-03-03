@@ -23,17 +23,18 @@ body {
 
 .sidebar {
   padding: 1rem;
-  background: linear-gradient(180deg, #122247, #0a142c);
-  border-right: 2px solid #4f89bd;
-  box-shadow: inset -8px 0 22px rgba(0, 0, 0, .45);
+  background: #ffffff;
+  color: #0f2d4a;
+  border-right: 1px solid #d4dfeb;
+  box-shadow: inset -8px 0 22px rgba(17, 48, 82, .08);
   overflow: auto;
   display: flex;
   flex-direction: column;
   gap: .15rem;
 }
 
-h1 { font-size: 1.2rem; margin-top: 0; color: var(--accent); letter-spacing: .03em; }
-h2 { margin: .9rem 0 .4rem; font-size: 1rem; color: #ffe66b; }
+h1 { font-size: 1.2rem; margin-top: 0; color: #123a63; letter-spacing: .03em; }
+h2 { margin: .9rem 0 .4rem; font-size: 1rem; color: #1e4f7c; }
 
 .row { display: flex; gap: .5rem; }
 input, textarea, button {
@@ -60,7 +61,7 @@ input { flex: 1; }
   padding: .4rem .55rem;
 }
 #boardList li.active { border-color: var(--accent); }
-#boardList li .name { cursor: pointer; flex: 1; }
+#boardList li .name { cursor: pointer; flex: 1; color: #eef8ff; }
 
 .tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
 .secondary-action { margin-bottom: .55rem; width: 100%; }
